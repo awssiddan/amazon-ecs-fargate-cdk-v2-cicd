@@ -15,8 +15,7 @@ export class EcsCdkStack extends cdk.Stack {
 
     const githubUserName = new cdk.CfnParameter(this, "githubUserName", {
         type: "String",
-        description: "Github username for source code repository",
-        default: "awssiddan"
+        description: "Github username for source code repository"
     })
 
     const githubRepository = new cdk.CfnParameter(this, "githubRespository", {
